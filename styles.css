@@ -1,3 +1,7 @@
 .image1 {
     width: 500px;
 }
+
+.image2 , .image3 {
+    height: 300px;
+}
