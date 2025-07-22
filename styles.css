@@ -2,11 +2,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: #000000;
+background: linear-gradient(45deg, rgba(0, 0, 0, 1) 5%, rgba(112, 112, 112, 1) 60%, rgba(255, 255, 255, 1) 95%);
+}
+
+p, h1, h2, h3 {
+    color: white;
 }
 
 .mainDiv {
-    border: 5px solid black;
-    width: 1390px;
+    border: 2px solid black;
+    width: 1140px;
     padding: 10px;
 }
 
