@@ -3,7 +3,7 @@ body {
     flex-direction: column;
     align-items: center;
     background: #000000;
-background: linear-gradient(45deg, rgba(0, 0, 0, 1) 5%, rgba(112, 112, 112, 1) 60%, rgba(255, 255, 255, 1) 95%);
+    background: linear-gradient(45deg, rgba(0, 0, 0, 1) 5%, rgba(112, 112, 112, 1) 60%, rgba(255, 255, 255, 1) 95%);
 }
 
 p, h1, h2, h3 {
@@ -11,15 +11,55 @@ p, h1, h2, h3 {
 }
 
 .mainDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: 2px solid black;
-    width: 1140px;
+    width: 1240px;
     padding: 10px;
+    gap: 20px;
+}
+
+.headerDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 40px;
+}
+
+.navigationBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+
+}
+
+.navigationBar h2 {
+    text-decoration: underline;
 }
 
 .image1 {
     width: 500px;
 }
 
+.shortStatementDiv {
+    width: 1000px;
+}
+
+.workImagesDiv {
+    width: 1240px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
 .image2 , .image3 {
-    height: 300px;
+    height: 500px;
+}
+
+.linksDiv {
+    display: flex;
+    gap: 10px;
 }
