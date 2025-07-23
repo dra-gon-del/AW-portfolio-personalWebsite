@@ -1,9 +1,14 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     background: #000000;
     background: linear-gradient(45deg, rgba(0, 0, 0, 1) 5%, rgba(112, 112, 112, 1) 60%, rgba(255, 255, 255, 1) 95%);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 p, h1, h2, h3 {
@@ -17,6 +22,8 @@ p, h1, h2, h3 {
     border: 2px solid black;
     width: 1240px;
     padding: 10px;
+    padding-top: 90px;
+    padding-bottom: 90px;
     gap: 20px;
 }
 
@@ -24,8 +31,14 @@ p, h1, h2, h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 100px;
+}
 
-    gap: 40px;
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: x-large;
 }
 
 .navigationBar {
@@ -38,6 +51,11 @@ p, h1, h2, h3 {
 
 .navigationBar h2 {
     text-decoration: underline;
+    font-size: 40px;
+}
+
+.quotesDiv {
+    font-size: 20px;
 }
 
 .image1 {
@@ -61,5 +79,6 @@ p, h1, h2, h3 {
 
 .linksDiv {
     display: flex;
+    flex-direction: row;
     gap: 10px;
 }
