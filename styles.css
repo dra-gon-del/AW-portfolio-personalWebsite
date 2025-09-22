@@ -5,10 +5,12 @@
 body {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: center;
     background: #000000;
     background: linear-gradient(45deg, rgba(0, 0, 0, 1) 5%, rgba(112, 112, 112, 1) 60%, rgba(255, 255, 255, 1) 95%);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 p, h1, h2, h3 {
@@ -19,8 +21,9 @@ p, h1, h2, h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid black;
-    width: 1240px;
+    justify-content: center;
+    /* border: 2px solid black;  */
+    width: 1500 px;
     padding: 10px;
     padding-top: 90px;
     padding-bottom: 90px;
@@ -42,7 +45,7 @@ p, h1, h2, h3 {
 }
 
 .quotesDiv {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .image1 {
@@ -51,6 +54,7 @@ p, h1, h2, h3 {
 
 .shortStatementDiv {
     width: 1000px;
+    font-size: 20px;
 }
 
 .workImagesDiv {
@@ -71,30 +75,41 @@ p, h1, h2, h3 {
 }
 
 .dropdown {
-    display: inline-block;
+    display: flex;
+    align-items: start;
+    padding: 50px;
 }
 
 .dropdown button {
-    background-color: hsl(0, 0%, 80%);
+    background-color: hsl(0, 0%, 37%);
     color: white;
     padding: 10px 15px;
     border: none;
     cursor: pointer;
+    font-size: large;
+    height: 50px;
+    width: 50px
+
 }
 
 .dropdown a {
-    display: block;
+    display: flex;
+    align-items: center;
     color: black;
     text-decoration: none;
     padding: 10px 15px;
+    font-size: large;
+    height: 40px;
+    align-items: center;
 }
 
 .dropdown .content {
     display: none;
     position: absolute;
-    background-color: hsl(0, 0%, 95%);
+    background-color: hsl(0, 0%, 74%);
     min-width: 100px;
     box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+    margin-top: 50px;
 }
 
 .dropdown:hover .content {
@@ -102,5 +117,9 @@ p, h1, h2, h3 {
 }
 
 .dropdown:hover button {
-    background-color: hsl(0, 0%, 90%);
+    background-color: hsl(0, 0%, 0%);
+}
+
+.dropdown a:hover {
+    background-color: hsl(0, 0%, 65%);
 }
